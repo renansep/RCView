@@ -37,6 +37,7 @@ Your view's XIB file must have the same name of your view subclass.
 If you need to create outlets, once in your XIB, assign the subclass to the File's Owner Class property (do not assign your subclass to the View's Class property).
 
 ![](filesOwnerHelp1.png?raw=true "Files Owner Help")
+
 ![](filesOwnerHelp2.png?raw=true "Files Owner Help")
 
 ## Installation
