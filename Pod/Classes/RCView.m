@@ -25,19 +25,19 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self setup];
+        [self setupRCView];
     }
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [self setup];
+        [self setupRCView];
     }
     return self;
 }
 
-- (void)setup {
+- (void)setupRCView {
     if ([self class] == [RCView class]) {
         NSLog(@"You must subclass RCView. Don't use it directly ;)");
         return;
