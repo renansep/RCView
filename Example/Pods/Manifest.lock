@@ -1,0 +1,14 @@
+PODS:
+  - RCView (0.1.0)
+
+DEPENDENCIES:
+  - RCView (from `../`)
+
+EXTERNAL SOURCES:
+  RCView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RCView: b867e6950c89d534bdeb07291d9356dae8bbeae2
+
+COCOAPODS: 0.39.0

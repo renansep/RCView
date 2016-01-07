@@ -1,0 +1,6 @@
+framework module RCView {
+  umbrella header "RCView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,31 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Now all you need to do is to create a subclass of RCView and a XIB file for your view.
+
+## Usage via Interface Builder (IB)
+
+Drag a View from the Object Library to you XIB / storyboard and assign your subclass in the View's Class property.
+
+## Usage via code
+
+If you're not using autolayout and want to set a frame to your view:
+```ruby
+[[MyViewSubclass alloc] initWithFrame:frame];
+```
+
+If you're using Auto Layout in your View's superview you can simply call:
+```ruby
+[[MyViewSubclass alloc] init];
+```
+And add the appropriate constraints later.
+
+If you want to provide a custom initializers for your views remember to call super initializers in their implementations.
+
 ## Requirements
+
+Your view's XIB file must have the same name of your view subclass.
+If you need to create outlets, once in your XIB, assign the subclass to the File's Owner Class property (do not assign your subclass to the View's Class property).
 
 ## Installation
 
@@ -22,7 +46,7 @@ pod "RCView"
 
 ## Author
 
-renansep, renansep93@gmail.com
+Renan Cargnin (renansep), renansep93@gmail.com
 
 ## License
 

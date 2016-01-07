@@ -1,0 +1,6 @@
+framework module Pods_RCView_Tests {
+  umbrella header "Pods-RCView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
