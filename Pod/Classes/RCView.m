@@ -16,6 +16,13 @@
 
 @implementation RCView
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self setFrame:_contentView.bounds];
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setup];
