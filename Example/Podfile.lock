@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RCView: b867e6950c89d534bdeb07291d9356dae8bbeae2
+  RCView: 0eabcf4b16dac5928bf77967db6a1e129d7c7d71
 
 COCOAPODS: 0.39.0

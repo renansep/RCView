@@ -20,6 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		751DA00F1C3E265700A717B0 /* RCViewSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DA00E1C3E265700A717B0 /* RCViewSubclass.m */; };
+		751DA0111C3E27AF00A717B0 /* RCViewSubclass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751DA0101C3E27AF00A717B0 /* RCViewSubclass.xib */; };
 		84C471E411F620D2E8FBBDCA /* Pods_RCView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BD7729F0EACB7B2D286711 /* Pods_RCView_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B99BC29573CC70060ABE774A /* Pods_RCView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43126B9CB7F2A141B2D965C5 /* Pods_RCView_Example.framework */; };
@@ -61,6 +63,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63738256426419E6B652584A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		67BD7729F0EACB7B2D286711 /* Pods_RCView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		751DA00D1C3E265700A717B0 /* RCViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCViewSubclass.h; sourceTree = "<group>"; };
+		751DA00E1C3E265700A717B0 /* RCViewSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCViewSubclass.m; sourceTree = "<group>"; };
+		751DA0101C3E27AF00A717B0 /* RCViewSubclass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCViewSubclass.xib; sourceTree = "<group>"; };
 		76B49FC0DA1E7040DF8AE343 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D1A56ABE36585D3A4EB01F2F /* Pods-RCView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCView_Example/Pods-RCView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 				6003F5A6195388D20070C39A /* RCViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				751DA00D1C3E265700A717B0 /* RCViewSubclass.h */,
+				751DA00E1C3E265700A717B0 /* RCViewSubclass.m */,
+				751DA0101C3E27AF00A717B0 /* RCViewSubclass.xib */,
 			);
 			name = "Example for RCView";
 			path = RCView;
@@ -279,6 +287,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				751DA0111C3E27AF00A717B0 /* RCViewSubclass.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +402,7 @@
 				6003F59E195388D20070C39A /* RCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				751DA00F1C3E265700A717B0 /* RCViewSubclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E1DEA69C33626BAC4FDAE15C'
+               BlueprintIdentifier = 'A2554ACFEDBE0BE073B8E433'
                BlueprintName = 'RCView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RCView.framework'>
