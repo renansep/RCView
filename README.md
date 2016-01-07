@@ -28,7 +28,7 @@ If you're using Auto Layout in your View's superview you can simply call:
 ```
 And add the appropriate constraints later.
 
-If you want to provide a custom initializers for your views remember to call super initializers in their implementations.
+If you want to provide custom initializers for your view remember to call super initializers in their implementations.
 
 ## Requirements
 
