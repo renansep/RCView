@@ -5,6 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/RCView.svg?style=flat)](http://cocoapods.org/pods/RCView)
 [![Platform](https://img.shields.io/cocoapods/p/RCView.svg?style=flat)](http://cocoapods.org/pods/RCView)
 
+## Overview
+Do you want to easily create UIView subclasses and initialize them via code, storyboards or XIBs?
+
+Do you want to separate your logic into small components when you have THAT complex ViewController?
+
+Do you want to reuse your component anywhere without caring about how to initialize it?
+
+Do you want all of these things even working with Auto Layout?
+
+RCView does it for you!
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
