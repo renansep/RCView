@@ -10,7 +10,7 @@
 
 @interface RCView ()
 
-@property (weak, nonatomic) UIView *contentView;
+@property (weak, nonatomic) UIView *rcContentView;
 
 @end
 
@@ -18,7 +18,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self setFrame:_contentView.bounds];
+        [self setFrame:self.rcContentView.bounds];
     }
     return self;
 }
@@ -43,18 +43,18 @@
         return;
     }
     
-    self.contentView = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].firstObject;
-    _contentView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self addSubview:_contentView];
+    self.rcContentView = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].firstObject;
+    self.rcContentView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addSubview:self.rcContentView];
     
-    [self pinView:_contentView attribute:NSLayoutAttributeTop];
-    [self pinView:_contentView attribute:NSLayoutAttributeBottom];
-    [self pinView:_contentView attribute:NSLayoutAttributeLeft];
-    [self pinView:_contentView attribute:NSLayoutAttributeRight];
+    [self pinContentViewWithAttribute:NSLayoutAttributeTop];
+    [self pinContentViewWithAttribute:NSLayoutAttributeBottom];
+    [self pinContentViewWithAttribute:NSLayoutAttributeLeft];
+    [self pinContentViewWithAttribute:NSLayoutAttributeRight];
 }
 
-- (void)pinView:(UIView *)view attribute:(NSLayoutAttribute)attribute {
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:view
+- (void)pinContentViewWithAttribute:(NSLayoutAttribute)attribute {
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.rcContentView
                                                      attribute:attribute
                                                      relatedBy:NSLayoutRelationEqual
                                                         toItem:self

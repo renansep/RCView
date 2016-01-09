@@ -23,7 +23,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _myStoryboardView.label.text = @"View instantiaded via storyvoard.";
+    _myStoryboardView.label.text = @"View instantiaded via storyboard.";
     
     RCViewSubclass *myView = [[RCViewSubclass alloc] initWithLabelText:@"View instatiated via code."];
     myView.frame = CGRectMake(15.0f, 200.0f, self.view.bounds.size.width - 30.0f, 100.0f);

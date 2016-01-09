@@ -5,12 +5,31 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCViewSubclass"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCViewSubclass">
+            <connections>
+                <outlet property="label" destination="Ggu-6y-OvK" id="RP1-LM-FAo"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggu-6y-OvK">
+                    <rect key="frame" x="15" y="15" width="570" height="570"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ggu-6y-OvK" secondAttribute="bottom" constant="15" id="4xV-P6-JDr"/>
+                <constraint firstItem="Ggu-6y-OvK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="UX8-LZ-RaA"/>
+                <constraint firstItem="Ggu-6y-OvK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="kV0-OK-tLh"/>
+                <constraint firstAttribute="trailing" secondItem="Ggu-6y-OvK" secondAttribute="trailing" constant="15" id="ne9-k6-keW"/>
+            </constraints>
         </view>
     </objects>
 </document>
